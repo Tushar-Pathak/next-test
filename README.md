@@ -12,7 +12,7 @@ Basic NextJs Blogging Application.
 
 ### Filling up the credentials
 
-Go you static folder and then credentials.js and then save your posgreSQL credentials in it.
+Go to static folder and then to credentials.js and then save your posgreSQL credentials into it.
 
 ### Run it
 
