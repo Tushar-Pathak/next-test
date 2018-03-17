@@ -47,7 +47,7 @@ class Navbar extends React.Component {
           </ul>
 
           <ul id="dropdown1" className="dropdown-content">
-             <li>Privacy</li>
+             <li><Link href="#">Privacy</Link></li>
              <li className="divider"></li>
              <li><Link href="/login">Log out</Link></li>
           </ul>

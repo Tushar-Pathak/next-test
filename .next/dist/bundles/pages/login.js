@@ -536,7 +536,15 @@ var Navbar = function (_React$Component) {
                     lineNumber: 50
                   }
                 },
-                'Privacy'
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
+                  { href: '#', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 50
+                    }
+                  },
+                  'Privacy'
+                )
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', { className: 'divider', __source: {
                   fileName: _jsxFileName,
@@ -657,12 +665,12 @@ var _jsxFileName = 'G:\\next-test\\components\\Layout.js';
           lineNumber: 13
         }
       }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', href: '/static/materialize/css/materialize.min.css', __source: {
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css', __source: {
           fileName: _jsxFileName,
           lineNumber: 14
         }
       }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', href: '/static/ionicons/css/ionicons.min.css', __source: {
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', href: 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', __source: {
           fileName: _jsxFileName,
           lineNumber: 15
         }
@@ -740,24 +748,19 @@ var _jsxFileName = 'G:\\next-test\\components\\Layout.js';
         }
       })
     ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('script', { src: '/static/jquery.js', __source: {
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js', __source: {
         fileName: _jsxFileName,
         lineNumber: 34
       }
     }),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('script', { src: '/static/materialize/js/materialize.min.js', __source: {
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js', __source: {
         fileName: _jsxFileName,
         lineNumber: 35
       }
     }),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('script', { src: '/static/paperfold.min.js', __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36
-      }
-    }),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('script', { src: '/static/init.js', __source: {
         fileName: _jsxFileName,
-        lineNumber: 37
+        lineNumber: 36
       }
     })
   );

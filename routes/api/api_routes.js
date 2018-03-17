@@ -124,20 +124,4 @@ router.put('/addlikes', (req, res) => {
   }
 });
 
-// //Return Blogs.
-// router.get('/getPost', (req, res) => {
-  
-//   db.user
-//     .findOne({
-//       where:{
-//         userId:req.query.userId
-//       },
-//       include:{
-//         model:db.blog
-//       }
-//   })
-//     .then( response => res.send(response.dataValues))
-//     .catch( error => console.log(error));
-// });
-
 module.exports = router;
