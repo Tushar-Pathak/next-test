@@ -54,7 +54,7 @@ class Search extends React.Component{
          <div className="row">
            <div className="input-field col s6 offset-s2">
             <i className="prefix ion-android-options tooltipped" data-position="bottom" data-delay="50" data-tooltip="Filter Search"></i>
-            <select defaultValue="Popular">
+            <select defaultValue="Popular" id="filter">
               <option value="Author Name">Author Name</option>
               <option value="Blog Name">Blog Name</option>
               <option value="Popular">Popular</option>              
@@ -64,7 +64,7 @@ class Search extends React.Component{
          <form action="" className="row">
            <div className="input-field col s7 offset-s2">
             <i className="prefix ion-android-search tooltipped" data-position="bottom" data-delay="50" data-tooltip="search" id="search"></i>
-            <input type="text" name="" id="" placeholder="Type here...."/>
+            <input type="text" ref="search" className="autocomplete" placeholder="Type here...."/>
            </div>
          </form>
          <div className="row">
@@ -84,6 +84,57 @@ class Search extends React.Component{
   componentDidMount(){
     $(document).ready(function(){
        $("select").material_select();
+
+      const primary = {
+        data:{
+          "Javascript":null,
+          "Html":null,
+          "Css":null,
+          "Python":null,
+          "React":null,
+          "Angular":null,
+          "Java":null,
+          "Data Science":null,
+          "Artificial Intelligence":null,
+          "Swift":null,
+          "PHP":null                     
+        },
+        minLength:1,
+        limit:10,
+        onAutoComplete:function(val){
+          console.log(val);
+        }
+      };
+
+      const authors = {
+        data:{
+          "David Walsh":null,
+          "Corey Scahfer":null,
+          "H.K. Das":null,
+          "William Stalling":null,
+          "J.P. Panday":null,
+          "Dinesh Kumar Tiwari":null,
+          "Nooparam Chauhan":null
+        },
+        minLength:1,
+        limit:10,
+        onAutoComplete:function(val){
+          console.log(val);
+        }
+      }
+
+       $('#filter').change(function(){
+         let filterValue = $('#filter').val();  
+         if(filterValue === 'Author Name'){
+            $('input.autocomplete').autocomplete(authors);           
+         }else {
+            $('input.autocomplete').autocomplete(primary);           
+         }
+       });
+
+       //Handle AutoCompletion.
+       $('input.autocomplete').autocomplete(primary);
+
     });
   }
 }

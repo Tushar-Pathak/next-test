@@ -1,11 +1,27 @@
 import Link from 'next/link';
+import axios from 'axios';
 
 class Login extends React.Component{
+
+  constructor(){
+    super();
+    this.state = {
+      username:null,
+      password:null
+    }
+  }
+
   render(){
     return (
         <div className = "row">
           <form action="#" className="cols12" onSubmit={this.submitHandler.bind(this)}>
            <div className="row">
+             <div className="input-field col s6 offset-s3">
+               <span className="chip red login_kids">
+                 <i className="ion-alert-circled"></i>  
+                  UserName or passsword is Incorrect.
+               </span>
+             </div>
              <div className="input-field col s6 offset-s3">
                <i className="ion-ios-person prefix"></i>
                <input type="text" className="validate" placeholder="UserName" ref="userName" autoFocus required/>
@@ -33,7 +49,32 @@ class Login extends React.Component{
       this.refs.userName.focus();
     }else if(this.refs.password.value === '') {
       this.refs.password.focus();
+    }else {
+      axios
+       .post('/api/login',{
+         username: this.refs.userName.value,
+         password:this.refs.password.value
+       })
+       .then((data)=>{
+         if(data.data !== false){
+           console.log(data.data);
+           window.location = '/home/'+data.data.userId;
+         }else if(data.data === false){
+           this.refs.userName.value = '';
+           this.refs.password.value = '';
+           $('.login_kids').show();           
+         }
+       })
+       .catch((err)=>{
+         console.log(err);
+       })
     }
+  }
+
+  componentDidMount(){
+    $(document).ready(function(){
+      $('.login_kids').hide();    
+    });
   }
 }
 

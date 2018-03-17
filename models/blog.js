@@ -1,17 +1,38 @@
-const Sequelize = require('sequelize');
+const blog = (connection, dataTypes) => {
 
-export default (connection) => {
   //Make Table.
   let Blog = connection.define('blog', {
-    title: Sequelize.STRING,
-    body: Sequelize.TEXT,
+    userId:{
+      type:dataTypes.STRING,
+      allowNull:false
+    },
+    title:{
+      type:dataTypes.STRING,
+      allowNull:false,
+      required:true
+    },
+    body:{
+      type:dataTypes.TEXT,
+      allowNull:false,
+      required:true
+    },
+    views:{
+      type:dataTypes.BIGINT,
+      allowNull:false
+    },
+    likes:{
+      type:dataTypes.BIGINT,
+      allowNull:false
+    }
   });
 
   Blog.associate = function(models) {
-    Blog.hasMany(models.user, {
-      foreignKey: 'blogid'
+    Blog.belongsTo(models.user, {
+      foreignKey: 'userId'
     });
   }
 
   return Blog;
 }
+
+module.exports = blog;

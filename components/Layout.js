@@ -1,8 +1,10 @@
 import Head from 'next/head';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import {If, Then, Else} from 'react-if';
+import HomeNavbar from './Home/HomeNavbar';
 
-export default ({ children, title = "Nextjs Blog App.", page = 'home'}) => (
+export default ({ loggedIn = 'false', children, title = "Nextjs Blog App.", page = 'home', userName, userId}) => (
   <div>
     <Head>
       <title> {title} </title>
@@ -15,7 +17,12 @@ export default ({ children, title = "Nextjs Blog App.", page = 'home'}) => (
     </Head>
 
     <div id="wrapper">
-      <Navbar page = { page }/>
+      <If condition = {loggedIn === 'true'}>
+        <Then><HomeNavbar userName={userName} userId={userId}/></Then>
+      </If>
+      <If condition = {loggedIn === 'false'}>
+         <Then><Navbar page = { page }/></Then>
+      </If>
 
       <main className="container">
         {children}
@@ -26,6 +33,7 @@ export default ({ children, title = "Nextjs Blog App.", page = 'home'}) => (
 
     <script src="/static/jquery.js"></script>
     <script src="/static/materialize/js/materialize.min.js"></script>
+    <script src="/static/paperfold.min.js"></script>
     <script src="/static/init.js"></script>
 
   </div>

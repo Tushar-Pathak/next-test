@@ -12,7 +12,11 @@ app
   
     const server = express();
 
-   // server.use('/api', require('./routes/api/api_routes'));
+   server.use('/api', require('./routes/api/api_routes'));
+
+    server.get('/home/:id', (req, res) => {
+      return app.render(req, res, '/home', req.params);
+    });
 
     server.get('*', (req, res) => {
       return handle(req, res);

@@ -191,6 +191,398 @@ var _jsxFileName = "G:\\next-test\\components\\Footer.js";
 
 /***/ }),
 
+/***/ "./components/Home/HomeNavbar.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link__ = __webpack_require__("next/link");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_link__);
+var _jsxFileName = 'G:\\next-test\\components\\Home\\HomeNavbar.js';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+var Navbar = function (_React$Component) {
+  _inherits(Navbar, _React$Component);
+
+  function Navbar() {
+    _classCallCheck(this, Navbar);
+
+    return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
+  }
+
+  _createClass(Navbar, [{
+    key: 'ToggleNav',
+
+
+    //Toggle Active Elements.
+    value: function ToggleNav() {
+      var pageName = this.props.page;
+      $('li').addClass('active');
+      console.log(pageName);
+      $('li').each(function () {
+        if ($(this).attr('id') !== pageName) $(this).removeClass('active');else {
+          console.log('as');
+          $(this).addClass('active');
+        }
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'container', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 23
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'nav',
+          { className: 'white', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 24
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'nav-wrapper', __source: {
+                fileName: _jsxFileName,
+                lineNumber: 25
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
+              { href: '#', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 26
+                }
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'a',
+                { className: 'brand-logo black-text', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 26
+                  }
+                },
+                'BloggSpot'
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
+              { href: '#', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 28
+                }
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'a',
+                { 'data-activates': 'mobile', className: 'button-collapse', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 28
+                  }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'ion-navicon black-text', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 28
+                  }
+                })
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'ul',
+              { className: 'side-nav', id: 'mobile', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 30
+                }
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'li',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 31
+                  }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'secondary-content ion-close-circled', 'data-dismiss': true, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 31
+                  }
+                })
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', { className: 'clearfix', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 32
+                }
+              }),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'li',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 33
+                  }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
+                  { href: '/', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 33
+                    }
+                  },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 33
+                      }
+                    },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'ion-home', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 33
+                      }
+                    }),
+                    'Home'
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'li',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 34
+                  }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
+                  { href: '/search', prefetch: true, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 34
+                    }
+                  },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 34
+                      }
+                    },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'ion-search', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 34
+                      }
+                    }),
+                    'Search'
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'li',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 35
+                  }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
+                  { href: '/login', prefetch: true, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 35
+                    }
+                  },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 35
+                      }
+                    },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'ion-person', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 35
+                      }
+                    }),
+                    'Login'
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', { className: 'divider', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 36
+                }
+              })
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'ul',
+              { className: 'right', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 38
+                }
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'li',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 39
+                  }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
+                  { href: {
+                      pathname: '/home/' + this.props.userId
+                    },
+                    prefetch: true, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 39
+                    }
+                  },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    { className: 'black-text', id: 'home', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 44
+                      }
+                    },
+                    this.props.userName
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'li',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 45
+                  }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
+                  { href: '#', prefetch: true, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 45
+                    }
+                  },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    { id: 'search', className: 'black-text', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 45
+                      }
+                    },
+                    'Search'
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'li',
+                { id: 'login', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 46
+                  }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
+                  { href: '#', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 46
+                    }
+                  },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    { id: 'login', className: 'black-text dropdown-button', 'data-activates': 'dropdown1', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 46
+                      }
+                    },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'ion-ios-keypad', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 46
+                      }
+                    })
+                  )
+                )
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'ul',
+              { id: 'dropdown1', className: 'dropdown-content', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 49
+                }
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'li',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 50
+                  }
+                },
+                'Privacy'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', { className: 'divider', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 51
+                }
+              }),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'li',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 52
+                  }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
+                  { href: '/login', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 52
+                    }
+                  },
+                  'Log out'
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      //$('li a').on('click', this.ToggleNav.bind(this));
+      $(document).ready(function () {
+        $(".dropdown-button").dropdown();
+      });
+    }
+  }]);
+
+  return Navbar;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["a"] = (Navbar);
+
+/***/ }),
+
 /***/ "./components/Layout.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -201,24 +593,33 @@ var _jsxFileName = "G:\\next-test\\components\\Footer.js";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_head__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Navbar__ = __webpack_require__("./components/Navbar.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Footer__ = __webpack_require__("./components/Footer.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_if__ = __webpack_require__("react-if");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_if___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_if__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Home_HomeNavbar__ = __webpack_require__("./components/Home/HomeNavbar.js");
 var _jsxFileName = 'G:\\next-test\\components\\Layout.js';
 
 
 
 
 
+
+
 /* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
-  var children = _ref.children,
+  var _ref$loggedIn = _ref.loggedIn,
+      loggedIn = _ref$loggedIn === undefined ? 'false' : _ref$loggedIn,
+      children = _ref.children,
       _ref$title = _ref.title,
       title = _ref$title === undefined ? "Nextjs Blog App." : _ref$title,
       _ref$page = _ref.page,
-      page = _ref$page === undefined ? 'home' : _ref$page;
+      page = _ref$page === undefined ? 'home' : _ref$page,
+      userName = _ref.userName,
+      userId = _ref.userId;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
     {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 6
+        lineNumber: 8
       }
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -226,7 +627,7 @@ var _jsxFileName = 'G:\\next-test\\components\\Layout.js';
       {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7
+          lineNumber: 9
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -234,7 +635,7 @@ var _jsxFileName = 'G:\\next-test\\components\\Layout.js';
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 8
+            lineNumber: 10
           }
         },
         ' ',
@@ -243,32 +644,32 @@ var _jsxFileName = 'G:\\next-test\\components\\Layout.js';
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { charSet: 'utf-8', __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
+          lineNumber: 11
         }
       }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { httpEquiv: 'X-UA-Compatible', content: 'IE=edge', __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 12
         }
       }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1', __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 13
         }
       }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', href: '/static/materialize/css/materialize.min.css', __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 14
         }
       }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', href: '/static/ionicons/css/ionicons.min.css', __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 15
         }
       }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', href: '/static/style.css', __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 16
         }
       })
     ),
@@ -276,19 +677,58 @@ var _jsxFileName = 'G:\\next-test\\components\\Layout.js';
       'div',
       { id: 'wrapper', __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 19
         }
       },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Navbar__["a" /* default */], { page: page, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        }
-      }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_4_react_if__["If"],
+        { condition: loggedIn === 'true', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_4_react_if__["Then"],
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 21
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__Home_HomeNavbar__["a" /* default */], { userName: userName, userId: userId, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 21
+            }
+          })
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_4_react_if__["If"],
+        { condition: loggedIn === 'false', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 23
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_4_react_if__["Then"],
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 24
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Navbar__["a" /* default */], { page: page, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 24
+            }
+          })
+        )
+      ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'main',
         { className: 'container', __source: {
             fileName: _jsxFileName,
-            lineNumber: 20
+            lineNumber: 27
           }
         },
         children
@@ -296,23 +736,28 @@ var _jsxFileName = 'G:\\next-test\\components\\Layout.js';
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Footer__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 31
         }
       })
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('script', { src: '/static/jquery.js', __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 34
       }
     }),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('script', { src: '/static/materialize/js/materialize.min.js', __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 35
+      }
+    }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('script', { src: '/static/paperfold.min.js', __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36
       }
     }),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('script', { src: '/static/init.js', __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
+        lineNumber: 37
       }
     })
   );
@@ -669,7 +1114,9 @@ var Navbar = function (_React$Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link__ = __webpack_require__("next/link");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_link__);
-var _jsxFileName = "G:\\next-test\\components\\login.js";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__("axios");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
+var _jsxFileName = 'G:\\next-test\\components\\login.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -683,134 +1130,163 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
+
 var Login = function (_React$Component) {
   _inherits(Login, _React$Component);
 
   function Login() {
     _classCallCheck(this, Login);
 
-    return _possibleConstructorReturn(this, (Login.__proto__ || Object.getPrototypeOf(Login)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (Login.__proto__ || Object.getPrototypeOf(Login)).call(this));
+
+    _this.state = {
+      username: null,
+      password: null
+    };
+    return _this;
   }
 
   _createClass(Login, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "div",
-        { className: "row", __source: {
+        'div',
+        { className: 'row', __source: {
             fileName: _jsxFileName,
-            lineNumber: 6
+            lineNumber: 16
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "form",
-          { action: "#", className: "cols12", onSubmit: this.submitHandler.bind(this), __source: {
+          'form',
+          { action: '#', className: 'cols12', onSubmit: this.submitHandler.bind(this), __source: {
               fileName: _jsxFileName,
-              lineNumber: 7
+              lineNumber: 17
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "div",
-            { className: "row", __source: {
+            'div',
+            { className: 'row', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 8
+                lineNumber: 18
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "div",
-              { className: "input-field col s6 offset-s3", __source: {
+              'div',
+              { className: 'input-field col s6 offset-s3', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 9
-                }
-              },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "ion-ios-person prefix", __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 10
-                }
-              }),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", className: "validate", placeholder: "UserName", ref: "userName", autoFocus: true, required: true, __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 11
-                }
-              })
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "div",
-              { className: "input-field col s6 offset-s3", __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 13
-                }
-              },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "prefix ion-android-create", __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 14
-                }
-              }),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "password", className: "validate", placeholder: "Password", ref: "password", required: true, __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 15
-                }
-              })
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "div",
-              { className: "input-field col s6 offset-s5", __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 17
+                  lineNumber: 19
                 }
               },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "button",
-                { type: "submit", className: "btn btn-sm waves-effect waves-light", __source: {
+                'span',
+                { className: 'chip red login_kids', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 18
+                    lineNumber: 20
                   }
                 },
-                "login ",
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "ion-android-send", __source: {
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'ion-alert-circled', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 18
+                    lineNumber: 21
+                  }
+                }),
+                'UserName or passsword is Incorrect.'
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'input-field col s6 offset-s3', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 25
+                }
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'ion-ios-person prefix', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 26
+                }
+              }),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'validate', placeholder: 'UserName', ref: 'userName', autoFocus: true, required: true, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 27
+                }
+              })
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'input-field col s6 offset-s3', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 29
+                }
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'prefix ion-android-create', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 30
+                }
+              }),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'password', className: 'validate', placeholder: 'Password', ref: 'password', required: true, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 31
+                }
+              })
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'input-field col s6 offset-s5', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 33
+                }
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'button',
+                { type: 'submit', className: 'btn btn-sm waves-effect waves-light', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 34
+                  }
+                },
+                'login ',
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'ion-android-send', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 34
                   }
                 })
               )
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "div",
-            { className: "input-field col s6 offset-s5", __source: {
+            'div',
+            { className: 'input-field col s6 offset-s5', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 21
+                lineNumber: 37
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "span",
-              { className: "chip #c8e6c9 green lighten-4", __source: {
+              'span',
+              { className: 'chip #c8e6c9 green lighten-4', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 22
+                  lineNumber: 38
                 }
               },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "ion-ios-help", __source: {
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'ion-ios-help', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 22
+                  lineNumber: 38
                 }
               }),
-              " ",
+              ' ',
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
-                { href: "#", __source: {
+                { href: '#', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 22
+                    lineNumber: 38
                   }
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "a",
+                  'a',
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 22
+                      lineNumber: 38
                     }
                   },
-                  " Forget Password"
+                  ' Forget Password'
                 )
               )
             )
@@ -822,14 +1298,39 @@ var Login = function (_React$Component) {
     //Handle Submit Events.
 
   }, {
-    key: "submitHandler",
+    key: 'submitHandler',
     value: function submitHandler(e) {
+      var _this2 = this;
+
       e.preventDefault();
       if (this.refs.userName.value === '') {
         this.refs.userName.focus();
       } else if (this.refs.password.value === '') {
         this.refs.password.focus();
+      } else {
+        __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post('/api/login', {
+          username: this.refs.userName.value,
+          password: this.refs.password.value
+        }).then(function (data) {
+          if (data.data !== false) {
+            console.log(data.data);
+            window.location = '/home/' + data.data.userId;
+          } else if (data.data === false) {
+            _this2.refs.userName.value = '';
+            _this2.refs.password.value = '';
+            $('.login_kids').show();
+          }
+        }).catch(function (err) {
+          console.log(err);
+        });
       }
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      $(document).ready(function () {
+        $('.login_kids').hide();
+      });
     }
   }]);
 
@@ -846,17 +1347,23 @@ var Login = function (_React$Component) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__("axios");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
 var _jsxFileName = "G:\\next-test\\components\\signup.js";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
 
 var Signup = function (_React$Component) {
   _inherits(Signup, _React$Component);
@@ -874,31 +1381,31 @@ var Signup = function (_React$Component) {
         "div",
         { className: "row", __source: {
             fileName: _jsxFileName,
-            lineNumber: 4
+            lineNumber: 6
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "form",
           { action: "", className: "col s12", onSubmit: this.submitHandle.bind(this), __source: {
               fileName: _jsxFileName,
-              lineNumber: 5
+              lineNumber: 7
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "div",
             { className: "input-field col s6", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 6
+                lineNumber: 8
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "ion-person prefix", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 7
+                lineNumber: 9
               }
             }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", className: "validate", placeholder: "First Name", ref: "first_name", autoFocus: true, required: true, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 8
+                lineNumber: 10
               }
             })
           ),
@@ -906,17 +1413,17 @@ var Signup = function (_React$Component) {
             "div",
             { className: "input-field col s6", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 10
+                lineNumber: 12
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "ion-person prefix", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 11
+                lineNumber: 13
               }
             }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", className: "validate", placeholder: "Last Name", ref: "last_name", required: true, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 12
+                lineNumber: 14
               }
             })
           ),
@@ -924,17 +1431,17 @@ var Signup = function (_React$Component) {
             "div",
             { className: "input-field col s12", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 14
+                lineNumber: 16
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "prefix ion-person-add", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 15
+                lineNumber: 17
               }
             }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", className: "validate", ref: "user_name", placeholder: "Username that you like...", required: true, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 16
+                lineNumber: 18
               }
             })
           ),
@@ -942,17 +1449,17 @@ var Signup = function (_React$Component) {
             "div",
             { className: "input-field col s12", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 18
+                lineNumber: 20
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "prefix ion-lock-combination", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 19
+                lineNumber: 21
               }
             }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "password", className: "validate", ref: "password", placeholder: "Password", required: true, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 20
+                lineNumber: 22
               }
             })
           ),
@@ -960,22 +1467,22 @@ var Signup = function (_React$Component) {
             "div",
             { className: "input-field col s12", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 22
+                lineNumber: 24
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "prefix ion-locked", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 23
+                lineNumber: 25
               }
             }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "password", className: "validate", ref: "repassword", placeholder: "Retype your Password", onKeyUp: this.handlekeyEvent.bind(this), required: true, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 24
+                lineNumber: 26
               }
             }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "kids chip", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 25
+                lineNumber: 27
               }
             })
           ),
@@ -983,38 +1490,38 @@ var Signup = function (_React$Component) {
             "div",
             { className: "input-field col s6 offset-s2", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 27
+                lineNumber: 29
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "prefix ion-person-stalker", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 28
+                lineNumber: 30
               }
             }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               "select",
-              { defaultValue: "Male", ref: "gender", __source: {
+              { defaultValue: "male", ref: "gender", __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 29
+                  lineNumber: 31
                 }
               },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "option",
-                { value: "Male", __source: {
+                { value: "male", __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 30
+                    lineNumber: 32
                   }
                 },
-                "Male"
+                "male"
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "option",
-                { value: "Female", __source: {
+                { value: "female", __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 31
+                    lineNumber: 33
                   }
                 },
-                "Female"
+                "female"
               )
             )
           ),
@@ -1022,17 +1529,17 @@ var Signup = function (_React$Component) {
             "div",
             { className: "input-field col s12", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 34
+                lineNumber: 36
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "prefix ion-calculator", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 35
+                lineNumber: 37
               }
             }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", className: "datepicker", ref: "date", required: true, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 36
+                lineNumber: 38
               }
             })
           ),
@@ -1040,14 +1547,14 @@ var Signup = function (_React$Component) {
             "div",
             { className: "input-field col s6 offset-s5", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 38
+                lineNumber: 40
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               "button",
               { type: "submit", className: "btn", __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 39
+                  lineNumber: 41
                 }
               },
               "submit"
@@ -1090,6 +1597,19 @@ var Signup = function (_React$Component) {
         this.refs.repassword.focus();
       } else if (this.refs.date === '') {
         this.refs.date.focus();
+      } else {
+        var _axios$post;
+
+        __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('/api/signup', (_axios$post = {
+          firstName: this.refs.first_name.value,
+          lastName: this.refs.last_name.value,
+          gender: this.refs.gender.value,
+          date_of_birth: this.refs.date.value
+        }, _defineProperty(_axios$post, "firstName", this.refs.first_name.value), _defineProperty(_axios$post, "userName", this.refs.user_name.value), _defineProperty(_axios$post, "password", this.refs.password.value), _axios$post)).then(function (response) {
+          window.location = '/login';
+        }).catch(function (err) {
+          console.log(err);
+        });
       }
     }
   }, {
@@ -1161,56 +1681,30 @@ var Login = function (_React$Component) {
         __WEBPACK_IMPORTED_MODULE_1__components_Layout__["a" /* default */],
         { title: 'Login:BloggSpot', page: 'login', __source: {
             fileName: _jsxFileName,
-            lineNumber: 9
+            lineNumber: 10
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
           { className: 'row', __source: {
               fileName: _jsxFileName,
-              lineNumber: 10
+              lineNumber: 11
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { className: 'col s12', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 11
+                lineNumber: 12
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'ul',
               { className: 'tabs', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 12
+                  lineNumber: 13
                 }
               },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'li',
-                { className: 'tab col s6', __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 13
-                  }
-                },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  __WEBPACK_IMPORTED_MODULE_2_next_link___default.a,
-                  { href: '#test1', __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 13
-                    }
-                  },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'a',
-                    {
-                      __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 13
-                      }
-                    },
-                    'Login'
-                  )
-                )
-              ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'li',
                 { className: 'tab col s6', __source: {
@@ -1220,7 +1714,7 @@ var Login = function (_React$Component) {
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   __WEBPACK_IMPORTED_MODULE_2_next_link___default.a,
-                  { href: '#test2', __source: {
+                  { href: '#test1', __source: {
                       fileName: _jsxFileName,
                       lineNumber: 14
                     }
@@ -1233,6 +1727,32 @@ var Login = function (_React$Component) {
                         lineNumber: 14
                       }
                     },
+                    'Login'
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'li',
+                { className: 'tab col s6', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 15
+                  }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_2_next_link___default.a,
+                  { href: '#test2', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 15
+                    }
+                  },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 15
+                      }
+                    },
                     'Signup'
                   )
                 )
@@ -1243,13 +1763,13 @@ var Login = function (_React$Component) {
             'div',
             { id: 'test1', className: 'col s12', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 17
+                lineNumber: 18
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_login__["a" /* default */], {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 18
+                lineNumber: 19
               }
             })
           ),
@@ -1257,13 +1777,13 @@ var Login = function (_React$Component) {
             'div',
             { id: 'test2', className: 'col s12', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 20
+                lineNumber: 21
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_signup__["a" /* default */], {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 21
+                lineNumber: 22
               }
             })
           )
@@ -1294,6 +1814,13 @@ module.exports = __webpack_require__("./pages/login.js");
 
 /***/ }),
 
+/***/ "axios":
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
+
+/***/ }),
+
 /***/ "next/head":
 /***/ (function(module, exports) {
 
@@ -1312,6 +1839,13 @@ module.exports = require("next/link");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-if":
+/***/ (function(module, exports) {
+
+module.exports = require("react-if");
 
 /***/ }),
 

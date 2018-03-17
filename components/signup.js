@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 class Signup extends React.Component{
   render(){
     return (
@@ -26,9 +28,9 @@ class Signup extends React.Component{
           </div>
           <div className="input-field col s6 offset-s2">
            <i className="prefix ion-person-stalker"></i>
-           <select defaultValue="Male" ref="gender">
-             <option value="Male">Male</option>
-             <option value="Female">Female</option>             
+           <select defaultValue="male" ref="gender">
+             <option value="male">male</option>
+             <option value="female">female</option>             
            </select>
           </div>
           <div className="input-field col s12">
@@ -70,6 +72,22 @@ class Signup extends React.Component{
       this.refs.repassword.focus();
     }else if (this.refs.date === ''){
       this.refs.date.focus();
+    }else {
+       axios.post('/api/signup',{
+         firstName:this.refs.first_name.value,
+         lastName:this.refs.last_name.value,
+         gender:this.refs.gender.value,
+         date_of_birth:this.refs.date.value,
+         firstName:this.refs.first_name.value,
+         userName:this.refs.user_name.value,
+         password:this.refs.password.value         
+       })
+        .then((response)=>{
+           window.location = '/login';
+        })
+        .catch((err)=>{
+           console.log(err);
+        });
     }
   }
 
